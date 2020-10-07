@@ -168,7 +168,7 @@ RUN curl -LO ${CURL_OPTIONS} \
 # https://www.cvedetails.com/vulnerability-list/vendor_id-72/product_id-21050/version_id-172000/GNU-Bash-4.3.html
 #
 RUN curl -LO ${CURL_OPTIONS} \
-      https://ftp.heanet.ie/mirrors/gnu/bash/bash-4.3.tar.gz && \
+      https://www.mirrorservice.org/sites/ftp.gnu.org/gnu/bash/bash-4.3.tar.gz && \
     tar zxf bash-4.3.tar.gz && \
     mkdir /opt/bash && cd bash-4.3 && \
     ./configure --prefix=/opt/bash && \
